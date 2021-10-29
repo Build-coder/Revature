@@ -16,9 +16,6 @@
 <body class="container-fluid">
 
 
-
-
-    
     <!-- Login Interface -->
     <div class="formClass">
         <form class="form-control">
@@ -31,6 +28,8 @@
     </div>
     <div class="row" id="buttonRow"></div>    
 
+    <!-- Button to toggle View Tickets on/off -->
+    <div id="myDIV">
     
     <!-- Table of Tickets -->
     <table class="table">
@@ -68,7 +67,7 @@
             <th scope="row">2</th>
             <td>Jacob</td>
             <td>Thornton</td>
-            <td>@fat</td>
+            <td>@MySpace</td>
           </tr>
           <tr>
             <th><label class="container">
@@ -93,8 +92,50 @@
         </div>
       </div>
 
+    </div>
 
 
+    <div class="center">
+        <button onclick="approveTickets()">Approve</button>
+        <button onclick="denyTickets()">Deny</button>
+
+        <!-- All Tickets can only be called if Finacial Manager creds are used -->
+        <button onclick="displayAllTickets()">View/Hide All Tickets</button>
+        <button onclick="displayTickets()">View/Hide Your Tickets</button>
+    </div>
+
+
+</div>
+<br><br><br><br>
+
+
+    <h1>Submit a Ticket</h1>
+    <form>
+        <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Amount</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="50.00">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Description</label>
+            <input type="password" class="form-control" id="inputPassword4" 
+            placeholder="Why is this a business expense?">
+        </div>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputState">Type</label>
+            <select id="inputState" class="form-control">
+            <option selected>Choose...</option>
+            <option>LODGING</option>
+            <option>TRAVEL</option>
+            <option>FOOD</option>
+            <option>OTHER</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</body>
 
 <script src="main.js"></script>
 

@@ -19,3 +19,19 @@ User:       author
 User:       resolver
 Status:     status
 Type:       type
+
+# Role
+EMPLOYEE
+MANAGER
+
+# Status
+PENDING
+APPROVED
+DENIED
+
+# Type
+LODGING
+TRAVEL
+FOOD
+OTHER
+
