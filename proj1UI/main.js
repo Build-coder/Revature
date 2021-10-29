@@ -27,6 +27,7 @@ function displayMenu() {
     }
   }
 
+  // ensures tickets are hidden when page loads
   window.onload = function() {
     displayTickets();
   };
